@@ -1,4 +1,4 @@
-import Tensorflow as tf 
+import tensorflow as tf 
 x = tf.variable([25,2,3])   # 1d tensor
 print(x)
 print(type(x))
