@@ -8,7 +8,7 @@ print(x.sum(axis=0)) # sum a particular row
 print(np.sum(x,0))
 print(x.sum(axis=1)) # sum a particular column
 print(np.sum(x,1))
- 
+print(x.mean(axis=0))   # also we find a mean , maximum value , minimum value and product of particular axis in numpy , torch and tensorflow
 print("Tensor Reduction using Torch \n")
 import torch
 x = torch.tensor([[25,2,3],[20,4,6]])
