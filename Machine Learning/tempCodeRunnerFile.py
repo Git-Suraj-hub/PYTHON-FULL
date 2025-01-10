@@ -1,0 +1,7 @@
+x = torch.tensor([25,2,3])
+print(x)
+print(type(x))
+print(len(x))
+print(x[0])
+print(type(x[0]))
+print(x.T)
