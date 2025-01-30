@@ -1,2 +1,4 @@
-
-shutil.rmtree("C:/Users/suraj/OneDrive/Desktop/PYTHON1/PYTHON-FULL/a")
+t1.start()
+t2.start()
+t3.start()
+t4.start()
