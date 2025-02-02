@@ -30,8 +30,8 @@ def corners(image_path, rad):
     return im
 
 
-qr = qrcode.QRCode(version=2, error_correction=qrcode.constants.ERROR_CORRECT_H)
-qr1 = qrcode.QRCode(version=2, error_correction=qrcode.constants.ERROR_CORRECT_H)
+qr = qrcode.QRCode(version=1, error_correction=qrcode.constants.ERROR_CORRECT_H)
+qr1 = qrcode.QRCode(version=5, error_correction=qrcode.constants.ERROR_CORRECT_H)
 
 
 qr.add_data('MY LINKEDIN ACCOUNT : www.linkedin.com/in/suraj-singh-mehta')
@@ -59,12 +59,12 @@ qr_img.show()
 
 
 qr_img1 = qr1.make_image(image_factory=StyledPilImage,
-                       module_drawer=RoundedModuleDrawer(),
+                       module_drawer=VerticalBarsDrawer(),
                        color_mask=ImageColorMask(color_mask_path='C:\\Users\\suraj\\OneDrive\\Desktop\\PYTHON1\\PYTHON-FULL\\PYTHON PROJECT\\QR CODE\\Microsoft_Bg.jpeg'),
                        embeded_image_path='C:\\Users\\suraj\\OneDrive\\Desktop\\PYTHON1\\PYTHON-FULL\\PYTHON PROJECT\\QR CODE\\Microsoft_Logo_Corner.png')
 
 
-qr_img1.save('C:\\Users\\suraj\\OneDrive\\Desktop\\PYTHON1\\PYTHON-FULL\\PYTHON PROJECT\\QR CODE\\Linkedin_Qr-Code.png')
+qr_img1.save('C:\\Users\\suraj\\OneDrive\\Desktop\\PYTHON1\\PYTHON-FULL\\PYTHON PROJECT\\QR CODE\\Microsoft_Qr-Code.png')
 
 
 qr_img1.show()
