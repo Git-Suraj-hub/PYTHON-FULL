@@ -81,6 +81,3 @@ import numpy as np
 # print(identity2)
 # print(type(identity2))
 # print(identity2.ndim)
-
-
-# 

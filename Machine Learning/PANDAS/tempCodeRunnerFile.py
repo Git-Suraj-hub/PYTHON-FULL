@@ -1,0 +1,6 @@
+print(csv.head(9))
+# print(csv.tail())
+# print(csv.tail(9))
+# print(csv.shape)
+# print(csv.size)
+# print(csv.ndim)

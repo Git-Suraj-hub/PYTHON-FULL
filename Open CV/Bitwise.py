@@ -1,0 +1,19 @@
+import cv2
+import numpy as np
+
+img1 = np.zeros((300,300),dtype='uint8')
+img2 = np.zeros((300,300),dtype='uint8')
+cv2.circle(img1,(150,150),50,(255,0,0),-1)
+cv2.rectangle(img2,(100,100),(300,300),(255,0,0),-1)
+
+bitwise_or = cv2.bitwise_or(img1,img2)
+bitwise_and = cv2.bitwise_and(img1,img2)
+bitwise_not = cv2.bitwise_not(img1)
+
+cv2.imshow("img1",img1)
+cv2.imshow("img2",img2)
+cv2.imshow("Bitwise Or",bitwise_or)
+cv2.imshow("bitwise Not",bitwise_not)
+cv2.imshow("Bitwise And",bitwise_and)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
